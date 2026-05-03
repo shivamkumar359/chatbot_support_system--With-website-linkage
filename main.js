@@ -11,6 +11,7 @@ function setThemeToggleLabel(isDark) {
   themeToggleLabel.innerText = isDark ? "🌙 Dark mode" : "☀️ Light mode";
 }
 
+
 function openSupportBot(shouldFocus = true) {
   supportBot.classList.remove("is-collapsed");
   chatLauncher.setAttribute("aria-expanded", "true");
