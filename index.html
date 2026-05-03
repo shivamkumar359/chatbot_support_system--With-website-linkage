@@ -179,6 +179,11 @@
       color: var(--on-primary);
     }
 
+    .nav-right a.button-primary,
+    .hero-actions a.button-primary {
+      color: var(--on-primary);
+    }
+
     .button-secondary {
       background: transparent;
       color: var(--ink);
@@ -945,7 +950,7 @@
 
     body.dark-mode .brand,
     body.dark-mode .nav-links a,
-    body.dark-mode .nav-right a,
+    body.dark-mode .nav-right a:not(.button-primary):not(.button-secondary):not(.button-on-dark),
     body.dark-mode .hero-copy h1,
     body.dark-mode .feature-note strong {
       color: #ffffff;
@@ -958,6 +963,12 @@
 
     body.dark-mode .button-primary {
       background: #ffffff;
+      color: #25282d;
+    }
+
+    body.dark-mode .nav-right a.button-primary,
+    body.dark-mode .hero-actions a.button-primary,
+    body.dark-mode .cta-band a.button-on-dark {
       color: #25282d;
     }
 
@@ -1211,7 +1222,7 @@
 <body>
   <div class="promo-banner">
     <span class="promo-pill">New</span>
-    <span>Mahito--shir support is ready to help visitors instantly</span>
+    <span>Mahito--shiro support is ready to help visitors instantly</span>
   </div>
 
   <header class="top-nav" aria-label="Primary navigation">
