@@ -1,0 +1,27 @@
+    /* ===== Content Sections ===== */
+    .content-section {
+      width: min(1280px, calc(100vw - 64px));
+      margin: 0 auto 64px;
+    }
+
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+      max-width: 760px;
+    }
+
+    .section-header h2 {
+      color: var(--ink-deep);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 500;
+      line-height: 1.15;
+    }
+
+    .section-header p {
+      color: var(--slate);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
